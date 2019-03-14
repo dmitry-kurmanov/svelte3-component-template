@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Welcome to MyComponent usage example</title>
+
+    <!-- <link rel="stylesheet" href="build/my-component.min.css" /> -->
+    <!-- <script src="build/my-component.min.js"></script> -->
+
+    <link rel="stylesheet" href="build/my-component.css" />
+    <script src="build/my-component.js"></script>
+  </head>
+
+  <body>
+    <div id="container"></div>
+
+    <script>
+      var name = "mr. Anderson!";
+
+      window.mycomponent = new MyComponent({
+        target: document.querySelector("#container"),
+        props: {
+          name: name
+        }
+      });
+
+      mycomponent.increment();
+    </script>
+  </body>
+</html>
