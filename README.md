@@ -18,5 +18,5 @@ npm run build
 
 ## run one time tests (helpfull for the [Husky](https://github.com/typicode/husky) prepush hooks):
 ```
-npm run build
+npm run test-single
 ```
